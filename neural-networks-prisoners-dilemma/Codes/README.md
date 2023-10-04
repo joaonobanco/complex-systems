@@ -14,9 +14,15 @@
 
 # Dependencies
 
-\#pip install <lib>
-    
-\$pip install --user <lib>
+
+```
+pip install <lib>
+```
+
+```
+pip install --user <lib>
+```
+
 
 - Required:
     - pandas
@@ -38,17 +44,17 @@
 
 ## Code Structure
 
-- MAIN.ipynb (OR MAIN.py)
-    - Import: libraries for importing.
-    - Preliminary Tournament: tournament used for the preliminary analysis; sequential run.
-        - Setup: variables initialisation and setup.
-        - Tournament: play the tournament.
-        - Plots and Tables: all plots and tables (heatmaps, ranks, etc).
-        - Moran: play Moran process; requires Setup to be run.
-    - Evolving Tournament: tournament used for the evolving network; **requires user intervention**.
-        - Setup: variables initialisation and setup.
-        - Tournament: play the tournament; **rate** and **prob** values must be manually changed.
-        - Plots: mean coop rate, and population
-        - Network Chart
-    - Comparing: reads from files produced by Evolving Tournament
+MAIN.ipynb (or MAIN.py)
+- Import: libraries for importing.
+- Preliminary Tournament: tournament used for the preliminary analysis; sequential run.
+    - Setup: variables initialisation and setup.
+    - Tournament: play the tournament.
+    - Plots and Tables: all plots and tables (heatmaps, ranks, etc).
+    - Moran: play Moran process; requires Setup to be run.
+- Evolving Tournament: tournament used for the evolving network; **requires user intervention**.
+    - Setup: variables initialisation and setup.
+    - Tournament: play the tournament; **rate** and **prob** values must be manually changed.
+    - Plots: mean coop rate, and population
+    - Network Chart
+- Comparing: reads from files produced by Evolving Tournament
     
